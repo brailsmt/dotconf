@@ -1,0 +1,4 @@
+#!/usr/local/bin/bash
+
+echo $1
+ssh $1 mkdir .ssh && scp ~/.ssh/id_rsa.pub $1:.ssh/authorized_keys
